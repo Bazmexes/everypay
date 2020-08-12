@@ -1,4 +1,19 @@
 @font-face{
+    font-family: 'avr';
+    src: url('../fonts/AvenirNextCyr-Regular\ \(1\).ttf') format('ttf'), url('../fonts/AvenirNextCyr-Regular.ttf')  format('truetype');
+    font-style: normal;
+}
+@font-face{
+    font-family: 'avb';
+    src: url('../fonts/AvenirNextCyr-Bold.ttf') format('ttf'), url('../fonts/AvenirNextCyr-Bold.ttf')  format('truetype');
+    font-style: normal;
+}
+@font-face{
+    font-family: 'avd';
+    src: url('../fonts/AvenirNextCyr-Demi.ttf') format('ttf'), url('../fonts/AvenirNextCyr-Demi.ttf')  format('truetype');
+    font-style: normal;
+}
+@font-face{
     font-family: 'Roboto';
     src: url('../fonts/Roboto-Regular.ttf') format('ttf');
     font-weight: 300;

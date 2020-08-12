@@ -1,0 +1,232 @@
+@import 'fonts';
+@import 'mixins';
+.header__content{
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.header__nav{
+    display: flex;
+    nav{
+        display: none;
+    }
+}
+.header__logo{
+    display: flex;
+    align-items: center;
+}
+.burger{
+    display: flex;
+    flex-direction: column;
+}
+.burger__line{
+    width: 27px;
+    height: 3px;
+    background: #1399CF;
+    margin-bottom: 5px;
+}
+.burger__line:last-child{
+    margin-bottom: 0;
+}
+.header__lang{
+    display: none;
+    p{
+        padding-right: 5px;
+    }
+    p:last-child{
+        padding-right: 0;
+    }
+}
+.header__button{
+    display: none;  
+    button{
+        padding: 13px 28px;
+        border-radius: 44px;
+        font-size: 16px;
+        line-height: 22px;
+        background-color: transparent;
+        border: 1px #1792C7 solid;
+        color: #1792C7;
+    }
+}
+.header__lang{
+    a{
+        margin-right: 5px;
+        color: #2D3238;
+        opacity: 0.5;
+        font-size: 16px;
+        text-decoration: none;
+    }
+    a:last-child{
+        margin-right: 0;
+    }
+    a:hover{
+        color: #32a8d7;
+        // background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+        // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        text-decoration: underline;
+    }
+}
+
+.header__nav_active{
+    overflow-y: hidden;
+    nav{
+
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 72px;
+        left: 0;
+        height: 95vh;
+        width: 100%;
+        background-color: #000;
+        justify-content: center;
+        align-items: center;
+        ul{
+            padding: 0;
+            list-style-type: none;
+            li{
+                text-align: center;
+                margin-bottom: 20px;
+                a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    line-height: 23px;
+                    letter-spacing: 0.96px;
+                    color: #555E68;
+                }
+            }
+        }
+    }
+}
+.header___link_button{
+    background-color: #1399CF;
+    padding: 13px 40px ;
+    border-radius: 44px;
+    color: #fff;
+    border: none;
+    font-family: 'avd';
+    font-size: 16px;
+}
+@include respond-to(tablet){
+    .header__nav_active{
+        overflow-y: hidden;
+    
+        nav{
+            ul{
+
+                li{
+                    margin-bottom: 32px;
+                    a{
+                        font-size: 24px;
+                        line-height: 33px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include respond-to(desktop){
+    .header__logo{
+        width: 10%;
+    }
+    .header__nav{
+        display: flex;
+        width: 82%;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            width: 65%;
+            display: block;
+            ul{
+                padding: 0;
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                li{
+                   font-size: 13px;
+                   a{
+                       text-decoration: none;
+                       font-family: 'avr';
+                       color: #2D3238;
+                   }
+                }
+            }
+        }
+    }
+
+    .header__button{
+        display: block;
+        button{
+            padding: 7px 22px;
+            border-radius: 44px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    .header__lang{
+        display: flex;
+        a{
+            font-size: 14px;
+        }
+    }
+    .header__burger{
+        display: none;
+    }
+    .header___link_mobile{
+        display: none;
+    }
+    .header___link_button{
+        display: none;
+    }
+}
+
+
+@media (min-width: 1000px){
+    .header__nav{
+        nav{
+            width: 62%;
+            ul{
+                padding: 0;
+                display: flex;
+                list-style-type: none;
+                justify-content: space-between;
+                li{
+                   font-size: 16px;
+                   a{
+                       text-decoration: none;
+                       font-family: 'avr';
+                       color: #2D3238;
+                   }
+                }
+            }
+        }
+    }
+
+    .header__lang{
+        a{
+            margin-right: 12px;
+        }
+        font-size: 16px;
+    }
+    .header__button{
+        button{
+            padding: 13px 28px;
+            border-radius: 44px;
+            min-width: 175px;
+            line-height: 22px;
+        }
+    }
+    .header__lang{
+        a{
+
+            font-size: 16px;
+        }
+       
+    }
+    
+}
