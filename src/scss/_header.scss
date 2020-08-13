@@ -9,6 +9,7 @@
 }
 .header__nav{
     display: flex;
+    z-index: 3;
     nav{
         display: none;
     }
@@ -49,6 +50,8 @@
         background-color: transparent;
         border: 1px #1792C7 solid;
         color: #1792C7;
+        font-family: 'avd';
+        letter-spacing: 0.369231px;
     }
 }
 .header__lang{
@@ -64,9 +67,6 @@
     }
     a:hover{
         color: #32a8d7;
-        // background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
-        // -webkit-background-clip: text;
-        // -webkit-text-fill-color: transparent;
         text-decoration: underline;
     }
 }
@@ -82,7 +82,7 @@
         left: 0;
         height: 95vh;
         width: 100%;
-        background-color: #000;
+        background-color: #fff;
         justify-content: center;
         align-items: center;
         ul{
@@ -112,6 +112,10 @@
     font-size: 16px;
 }
 @include respond-to(tablet){
+    .header__content{
+        padding: 50px 0;
+
+    }
     .header__nav_active{
         overflow-y: hidden;
     
@@ -131,6 +135,9 @@
 }
 
 @include respond-to(desktop){
+    .header__content{
+        padding: 28px 0;
+    }
     .header__logo{
         width: 10%;
     }
@@ -185,22 +192,23 @@
     }
 }
 
-
-@media (min-width: 1000px){
+@include respond-to(desktop){
     .header__nav{
         nav{
-            width: 62%;
+            width: 63%;
             ul{
                 padding: 0;
                 display: flex;
                 list-style-type: none;
                 justify-content: space-between;
                 li{
-                   font-size: 16px;
+                   font-size: 14px;
+                   letter-spacing: 0.96px;
                    a{
                        text-decoration: none;
                        font-family: 'avr';
                        color: #2D3238;
+                       letter-spacing: 0.96px;
                    }
                 }
             }

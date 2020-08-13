@@ -1,0 +1,111 @@
+@import 'mixins';
+@import 'fonts';
+
+.guide{
+    p{
+        margin: 0;
+    }
+    h3{
+        margin: 0;
+    }
+}
+
+.guide__content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 130px;
+    margin-bottom: 45px;
+    h3{
+        font-family: 'avb';
+        font-size: 32px;
+        line-height: 38px;
+
+        text-align: center;
+        letter-spacing: 0.985946px;
+    }
+}
+.guide__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.guide__item{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    p{
+        margin-top: 5px;
+        text-align: center;
+        max-width: 208px;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.443077px;
+    }
+}
+
+
+@include respond-to(tablet){
+    .guide__content{
+        margin-top: 110px;
+        h3{
+            font-size: 40px;
+            line-height: 46px;
+            letter-spacing: 0.985946px;
+        }
+    }
+    .guide__box{
+        width: 100%;
+
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .guide__item{
+        margin-top: 67px;
+        picture{
+            img{
+                min-height: 99px;
+            }
+        }
+        p:first-child{
+            margin-top: 15px;
+        }
+        p{
+            margin-top: 17px;
+        }
+
+    }
+}
+
+@include respond-to(desktop){
+    .guide__content{
+        margin-top: 100px;
+        h3{
+            font-size: 40px;
+            line-height: 46px;
+            letter-spacing: 0.985946px;
+            text-align-last: left;
+        }
+    }
+    .guide__box{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .guide__item{
+        margin-top: 90px;
+        picture{
+            img{
+                min-height: 138px;
+            }
+        }
+        p{
+            text-align: center;
+            margin-top: 35px;
+            line-height: 28px;
+            letter-spacing: 0.443077px;
+        }
+
+    }
+}

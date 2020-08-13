@@ -1,16 +1,35 @@
 @import 'fonts';
 @import 'header.scss';
+@import 'main';
+@import 'guide';
+@import 'auto';
 body{
     margin: 0;
     box-sizing: border-box;
     font-family: avr;
+    color: #2D3238;
 }
+
+
+.body_active{
+    overflow-y: hidden;
+}
+
 .container{
-    width: 95%;
+    width: 87%;
     margin: 0px auto;
     max-width: 1098px;
 }
 
-.body_active{
-    overflow-y: hidden;
+.container{
+    width: 83%;
+    margin: 0px auto;
+    max-width: 1098px;
+}
+@include respond-to(desktop){
+    .container{
+        width: 95%;
+        margin: 0px auto;
+        max-width: 1098px;
+    }
 }

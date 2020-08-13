@@ -1,0 +1,187 @@
+@import 'mixins';
+@import 'fonts';
+.auto{
+    background-color: #E8F4F7;
+
+}
+.auto__content{
+    padding: 60px 0;
+    overflow: hidden;
+}
+.auto__title{
+    display: flex;
+    justify-content: center;
+    h3{
+        font-family: 'avb';
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.44px;
+        margin: 0;
+        max-width: 278px;
+    }
+}
+.auto__form{
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: relative;
+    p{
+        margin: 0;
+        margin-top: 12px;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: center;
+        letter-spacing: 0.443077px;
+        margin-bottom: 20px;
+        max-width: 278px;
+    }
+    img{
+        position: absolute;
+        top: -55px;
+        right: -30px;
+    }
+}
+.form{
+        z-index: 3;
+        width: 100%;
+        display: flex;
+        margin-top: 48px;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        max-width: 419px;
+        margin: 0 auto;
+        input{
+            border-radius: 44px;
+            border: none;
+            padding: 16.5px 25px 16.5px 20px;
+            width: 100%;
+            color: #1792C7;
+            border: 1px solid rgba(56, 152, 254, 0.4);
+        }
+        ::-webkit-input-placeholder{
+            font-family: 'avr';
+            letter-spacing: 0.96px;
+            opacity: 0.6;
+            color: #1792C7;
+            line-height: 24px;
+        }
+        button{
+            font-family: 'avd';
+            letter-spacing: 0.443077px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 13px 26px;
+            border-radius: 44px;
+            border: none;
+            font-size: 16px;
+            line-height: 24px;
+            color: #fff;
+            background: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
+        }
+}
+@include respond-to(tablet){
+    .auto{
+        background-color: #fff;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position:  right;
+        margin-top: 113px;
+    }
+    .auto__content{
+        background-color: #E8F4F7;
+        background-image: none;
+    }
+    .auto__title{
+        h3{
+            max-width: 433.2px;
+            font-size: 40px;
+            line-height: 46px;
+            letter-spacing: 0.985946px;
+        }
+    }
+    .auto__form{
+
+        p{
+            margin-top: 24px;
+            margin-bottom: 48px;
+            max-width: 433.2px;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.443077px;
+        }
+    }
+    .form{
+            margin-top: 48px;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            max-width: 419px;
+            margin: 0 auto;
+            input{
+                padding: 12px 20px;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.96px;
+                border: 1px solid rgba(56, 152, 254, 0.4);
+            }
+            ::-webkit-input-placeholder{
+                line-height: 24px;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.96px;
+            }
+            button{
+                padding: 13px 53px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+    }
+}
+
+@include respond-to(desktop){
+    .auto{
+        background-color: #fff;
+        background-image: none;
+        background-repeat: no-repeat;
+        background-position:  right;
+        margin-top: 130px;
+    }
+    .auto__content{
+        display: flex;
+        justify-content: space-around;
+        background-color: #E8F4F7;
+        background-image: none;
+        overflow: hidden;
+    }
+    .auto__title{
+
+        h3{
+            max-width: 433.2px;
+            margin-top: 10px;
+            margin-left: 27px;
+        }
+    }
+    .auto__form{
+        position: relative;
+        padding-right: 56px;
+        p{
+            margin-top: 24px;
+            margin-bottom: 60px;
+            max-width: 433.2px;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0.443077px;
+            text-align-last: left;
+            z-index: 3;
+        }
+        img{
+            position: absolute;
+            top: -15px;
+            right: 0;
+        }
+    }
+}
