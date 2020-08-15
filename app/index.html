@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test page</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="../dist/css/app.css">
 </head>
 <body>
@@ -124,7 +126,381 @@
             </div>
         </div>
     </section>
-    <div class="" style="height: 1000px; width: 100%; background-color: red;"></div>
+    <section class="bank">
+        <div class="container mob-container">
+            <div class="bank__content">
+                <div class="title">
+                    <h3>Банки и интеграции</h3>
+                </div>
+                <div class="bank__box">
+                    <div class="bank__item">
+                        <div class="bank__item-header">
+                            <p>Банки</p>
+                        </div>
+                        <div class="bank__item-content">
+                            <a href="#">
+                                    <img src="../dist/img/svg/bank1.svg" alt="bank">
+                            </a>
+                            <a href="#">
+                                <picture>
+                                    <source srcset="../dist/img/svg/bankDesk.svg" media="(min-width: 769px)">
+                                    <img src="../dist/img/svg/bank2.svg" alt="bank">
+                                </picture>
+                            </a>
+                            <a href="#">
+                                    <img src="../dist/img/svg/bank3.svg" alt="bank">
+                            </a>
+                        </div>
+                        <div class="bank__footer">
+                            <img src="../dist/img/svg/plus.svg" class="plus" alt="plus">
+                            <img src="../dist/img/svg/list.svg"  alt="list">
+                            <p>Загрузка из <span>1С</span> </p>
+                        </div>
+                    </div>
+                    <div class="bank__item">
+                        <div class="bank__item-header">
+                            <p>Интеграции</p>
+                        </div>
+                        <div class="bank__int-content">
+                            <div class="bank__int-item">
+                                <img src="../dist/img/svg/push.svg" alt="#">
+                                <p>Push-web уведомления</p>
+                            </div>
+                            <div class="bank__int-item">
+                                <img src="../dist/img/svg/mail.svg" alt="#">
+                                <p>E-mail уведомления</p>
+                            </div>
+                            <div class="bank__int-item">
+                                <img src="../dist/img/svg/telegram.svg" alt="#">
+                                <p>Telegram</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="target">
+        <div class="container">
+            <div class="target__content">
+                <div class="title">
+                    <h3>Для кого</h3>
+                </div>
+                <div class="target__box">
+                    <div class="target__item">
+                        <picture>
+                            <source srcset="../dist/img/svg/targetDesk.svg" media="(min-width: 1024px)">
+                            <img src="../dist/img/svg/tree.svg" alt="tree">
+                        </picture>
+                        <h5>Малый бизнеc</h5>
+                        <p>
+                            Скорость получения информации о платежах 
+                            и минимизация издержек
+                        </p>
+                    </div>
+                    <div class="target__item">
+                        <picture>
+                            <source srcset="../dist/img/svg/targetDesk2.svg" media="(min-width: 1024px)">
+                            <img src="../dist/img/svg/unicorn.svg" alt="tree">
+                        </picture>
+                        <h5>Стартапы</h5>
+                        <p>
+                            Автоматизация бизнес-процессов 
+                            и бухгалтерской рутины
+                        </p>
+                    </div>
+                    <div class="target__item">
+                        <picture>
+                            <source srcset="../dist/img/svg/targetDesk3.svg" media="(min-width: 1024px)">
+                            <img src="../dist/img/svg/lamp.svg" alt="">
+                        </picture>
+                        <h5>Разработчики</h5>
+                        <p>
+                            Быстрое внедрение своих приложений для малого бизнеса и стартапов
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="case">
+        <div class="container mob-container">
+            <div class="case__content case__content_mob">
+                <div class="title">
+                    <h3>Кейсы</h3>
+                </div>
+                <div class="swiper-container slide_mob">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="case__item">
+                                <div class="case__image-box">
+                                    <img src="../dist/img/svg/slide1.svg" alt="bit">
+                                    <img src="../dist/img/svg/slide2.svg" alt="bit">
+                                    <img src="../dist/img/svg/slide3.svg" alt="bit">
+                                </div>
+                                <div class="case__desc">
+                                    <div class="case__header">
+                                        <h5>Автоматизация диджитал-агентства</h5>
+                                    </div>
+                                    <a href="#">Читать кейс ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="case__item">
+                                <div class="case__image-box">
+                                    <img src="../dist/img/svg/slide1.svg" alt="bit">
+                                    <img src="../dist/img/svg/slide2.svg" alt="bit">
+                                    <img src="../dist/img/svg/slide4.svg" alt="bit">
+                                </div>
+                                <div class="case__desc">
+                                    <div class="case__header">
+                                        <h5>Приём платежей 
+                                            в рекламной медиа-группе</h5>
+                                    </div>
+                                    <a href="#">Читать кейс ></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="case__item">
+                                <div class="case__image-box">
+                                    <img src="../dist/img/svg/slide1.svg" alt="bit">
+                                    <img src="../dist/img/svg/slide2.svg" alt="bit">
+                                    <img src="../dist/img/svg/slide4.svg" alt="bit">
+                                </div>
+                                <div class="case__desc">
+                                    <div class="case__header">
+                                        <h5>Оптимизация бухгалтерии 
+                                            в производственной
+                                            компании</h5>
+                                    </div>
+                                    <a href="#">Читать кейс ></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="case__content_desk">
+                <div class="title">
+                    <h3>Кейсы</h3>
+                </div>
+                <div class="case__box_desk">
+                    <div class="case__item">
+                        <div class="case__image-box">
+                            <img src="../dist/img/svg/slide1.svg" alt="bit">
+                            <img src="../dist/img/svg/slide2.svg" alt="bit">
+                            <img src="../dist/img/svg/slide3.svg" alt="bit">
+                        </div>
+                        <div class="case__desc">
+                            <div class="case__header">
+                                <h5>Автоматизация диджитал-агентства</h5>
+                            </div>
+                            <a href="#">Читать кейс ></a>
+                        </div>
+                    </div>
+                    <div class="case__item">
+                        <div class="case__image-box">
+                            <img src="../dist/img/svg/slide1.svg" alt="bit">
+                            <img src="../dist/img/svg/slide2.svg" alt="bit">
+                            <img src="../dist/img/svg/slide4.svg" alt="bit">
+                        </div>
+                        <div class="case__desc">
+                            <div class="case__header">
+                                <h5>Приём платежей 
+                                    в рекламной медиа-группе</h5>
+                            </div>
+                            <a href="#">Читать кейс ></a>
+                        </div>
+                    </div>
+                    <div class="case__item">
+                        <div class="case__image-box">
+                            <img src="../dist/img/svg/slide1.svg" alt="bit">
+                            <img src="../dist/img/svg/slide2.svg" alt="bit">
+                            <img src="../dist/img/svg/slide4.svg" alt="bit">
+                        </div>
+                        <div class="case__desc">
+                            <div class="case__header">
+                                <h5>Оптимизация бухгалтерии 
+                                    в производственной
+                                    компании</h5>
+                            </div>
+                            <a href="#">Читать кейс ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rate">
+        <div class="container">
+            <div class="rate__content">
+                <div class="rate__mob-image">
+                    <img src="../dist/img/svg/rub.svg" alt="rate">
+                </div>
+                <div class="title rate__title">
+                    <h3>Тарифы</h3>
+                </div>
+                <div class="rate__box">
+                    <div class="rate__desc">
+                        <p>
+                            Everypay находится в стадии закрытого beta-теста, но у вас есть возможность присоединиться 
+                            к тестированию сервиса. 
+                        </p>
+                        <p>
+                            Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.
+                        </p>
+                        <form action="" class="form form-on">
+                            <input type="text" placeholder="Введите email">
+                            <button>Узнать</button>
+                        </form>
+                    </div>
+                    <picture>
+                        <source srcset="../dist/img/svg/rubDesk.svg" media="(min-width: 1024px)">
+                        <source srcset="../dist/img/svg/rubTab.svg" media="(min-width: 768px)">
+                        <img src="../dist/img/svg/rub.svg" alt="rate">
+                    </picture>
+                </div>
+            </div>
+            <form action="" class="form form-escape">
+                <input type="text" placeholder="Введите email">
+                <button>Узнать</button>
+            </form>
+        </div>
+    </section>
+    <section class="soon">
+        <div class="container">
+            <div class="soon__content">
+                <div class="title soon-title">
+                    <h3>Скоро появится</h3>
+                </div>
+                <div class="soon__box">
+                    <div class="soon__item">
+                        <div class="soon__header">
+                            <h5>
+                                Интеграции с CRM-системами 
+                                Битрикс 24 и amoCRM
+                            </h5>
+                        </div>
+                        <div class="soon__wrap">
+                            <div class="soon__line">
+
+                            </div>
+                            <div class="soon__desc">
+                                <p>Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники</p>
+                                <div class="soon__images_box">
+                                    <img src="../dist/img/svg/bit.svg" alt="bit">
+                                    <img src="../dist/img/svg/amo.svg" alt="amo">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="soon__item">
+                        <div class="soon__header">
+                            <h5>
+                                Открытое API Everypay
+                            </h5>
+                        </div>
+                        <div class="soon__wrap">
+                            <div class="soon__line">
+
+                            </div>
+                            <div class="soon__desc">
+                                <p>Подключайте свои системы 
+                                    и интегрируйте уведомления 
+                                    о поступающих платежах самостоятельно с помощью простого API Everypay</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="soon__item">
+                        <div class="soon__header">
+                            <h5>
+                                Автоматическое создание платежек
+                            </h5>
+                        </div>
+                        <div class="soon__wrap">
+                            <div class="soon__line">
+
+                            </div>
+                            <div class="soon__desc">
+                                <p>Загрузите скан счета на оплату в нашу систему и в банк-клиенте автоматически будет создано платежное поручение на основании данных из счета. С помощью технологий компьютерного зрения и машинного обучения мы достигаем высокой точности и скорости работы</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="soon__header outside">
+                        <h5>
+                            И еще 17 нововведений
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="security">
+        <div class="container">
+            <div class="security__content">
+                <img src="../dist/img/svg/sec.svg" alt="security" class="security__image_mob">
+                <div class="title security__title title_mob-esc">
+                    <h3>Безопасность</h3>
+                </div>
+                <div class="security__box">
+                    <picture>
+                        <source srcset="../dist/img/svg/secDesk.svg" media="(min-width: 1024px)">
+                        <img src="../dist/img/svg/sec.svg" alt="security">
+
+                    </picture>
+                    <div class="security__desk">
+                        <div class="title security__title title_off">
+                            <h3>Безопасность</h3>
+                        </div>
+                        <p>Использование Everypay полностью безопасно: подключение к банковскому счету осуществляется 
+                            в режиме «только 
+                            для получения выписок», 
+                            а хранение информации 
+                            в системе защищено 
+                            и деперсонализировано.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__content">
+                <div class="title footer__title">
+                    <h3>Подключиться</h3>
+                </div>
+                <div class="footer__box">
+                    <div class="footer__desc">
+                        <p>Хотите начать пользоваться системой? Напишите нам.</p>
+                        <span>email</span>
+                        <p>hello@everypay.io</p>
+                    </div>
+                    <form action="">
+                        <input type="text" required placeholder="Ваше имя*" class="footer__input input__name">
+                        <input type="email" required placeholder="Email*" class="footer__input input__email">
+                        <textarea   required placeholder="Расскажите о своей компании*" class="footer__input input__text"></textarea>
+                        <button type="submit" class="footer__button">Подключиться</button>
+                    </form>
+                </div>
+                <div class="footer__copy">
+                    <a href="#">Политика конфиденциальности</a>
+                    <span>© 2020, Everypay</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../dist/js/app.js"></script>
 </body>
 </html>

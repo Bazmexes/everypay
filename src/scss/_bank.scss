@@ -1,0 +1,237 @@
+@import 'mixins'; 
+@import 'fonts';
+.title{
+    font-family: 'avb';
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    letter-spacing: 0.985946px;
+    max-width: 280px;
+    h3{
+        margin: 0;
+    }
+}
+
+.bank__box{
+    margin-top: 40px;
+    width: 100%;
+    max-width: 280px;
+}
+.bank__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 38px;
+    margin-top: 141px;
+    p{
+        margin: 0;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.443077px;
+        span{
+            font-family: 'avd';
+        }
+    }
+    h3{
+        margin: 0;
+    }
+}
+.bank__item{
+    max-width: 278px;
+    border: 1px solid rgba(56, 152, 254, 0.187528);
+    margin-bottom: 30px;
+}
+.bank__item-header{
+    width: 89%;
+    margin: 0 auto;
+    p{
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: 0.443077px;
+        color: rgba(56, 152, 254, 0.5);
+        margin-top: 18px;
+    }
+}
+.bank__item-content{
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    justify-content: center;
+    width: 85%;
+    margin: 30px auto 21px;
+    a{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    a:last-child{
+        margin-bottom: 30px;
+    }
+    border-bottom: 1px solid rgba(56, 152, 254, 0.187528);
+}
+.bank__footer{
+    width: 90%;
+    margin: 21px auto 16px;
+    display: flex;
+    align-items: center;
+    p{
+
+    }
+    img:last-child{
+        margin-right: 0;
+    }
+    img{
+        margin-right: 13px;
+    }
+
+}
+.bank__int-content{
+    width: 90%;
+    margin: 30px auto 21px;
+    display: flex;
+    flex-direction: column;
+}
+.bank__int-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px;
+    img{
+        height: 40px;
+        width: 40px;
+        margin-right: 16px;
+    }
+}
+.bank__int-item:last-child{
+    margin-bottom: 0;
+}
+
+@include respond-to(tablet){
+
+    .title{
+        font-size: 40px;
+        line-height: 46px;
+        letter-spacing: 0.985946px;
+        max-width: 534px;
+    }
+    .bank__box{
+        max-width: 534px;
+    }
+    .bank__item{
+        max-width: 534px;
+        border: 1px solid rgba(56, 152, 254, 0.187528);
+        margin-bottom: 30px;
+    }
+    .bank__item-header{
+        font-size: 18px;
+    }
+    .bank__item-content{
+        margin-top: 28px;
+        grid-column-gap: 10px;
+        justify-content: start;
+        width: 90%;
+        margin: 30px auto 21px;
+        align-items: start;
+        a{
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+                img{
+                    height: 77px;
+                    width: 173px;
+                }
+
+        }
+        a:last-child{
+            margin-bottom: 30px;
+        }
+        border-bottom: 1px solid rgba(56, 152, 254, 0.187528);
+    }
+    .bank__footer{
+        margin: 40px auto 35px;
+        p{
+            font-size: 18px;
+        }
+    }
+    .bank__int-content{
+        width: 84%;
+        margin: 52px auto 63px;
+        display: flex;
+        flex-direction: column;
+    }
+    .bank__int-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 43px;
+        img{
+            width: 59.79px;
+            height: 59.79px;
+            margin-right: 28px;
+        }
+    }
+}
+
+@include respond-to(desktop){
+
+    .title{    
+        max-width: 100%;
+        min-width: 100%;
+        text-align: left;
+    }
+    .bank__box{
+        margin-top: 97px;
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .bank__item{
+        width: 49%;
+        margin-bottom: 30px;
+    }
+    .bank__item-header{
+        font-size: 18px;
+    }
+    .bank__item-content{
+        margin-top: 28px;
+        grid-column-gap: 10px;
+        justify-content: start;
+        width: 87%;
+        margin: 41px auto 21px;
+        align-items: start;
+        a{
+            display: flex;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+                img{
+                    height: 77px;
+                    width: 173px;
+                }
+
+        }
+        a:last-child{
+            margin-bottom: 30px;
+        }
+    }
+    .bank__footer{
+        margin: 40px auto 35px;
+        p{
+            font-size: 18px;
+        }
+    }
+    .bank__int-content{
+        width: 84%;
+        margin: 52px auto 63px;
+        display: flex;
+        flex-direction: column;
+    }
+    .bank__int-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 43px;
+        img{
+            width: 59.79px;
+            height: 59.79px;
+            margin-right: 28px;
+        }
+    }
+}
