@@ -4,6 +4,9 @@
  .case{
      margin-top: 140px;
  }
+ .case__title{
+    max-width: 100%;
+}
 .swiper-container {
     margin-top: 40px;
     width: 100%;
@@ -42,7 +45,7 @@
   }
   .case__image-box{
       display: flex;
-      justify-content: start;
+      justify-content: flex-start;
       img{
           
           margin-right: 12px;
@@ -99,6 +102,7 @@
     .case__item{
         height: 297px;
     }
+
     .case__header{
 
         h5{

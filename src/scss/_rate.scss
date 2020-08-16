@@ -88,7 +88,7 @@
         .rate__desc{
             display: flex;
             flex-direction: column;
-            justify-content: start;
+            justify-content: flex-start;
             margin-top: 18px;
             p{
                 margin-top: 10px;
@@ -121,8 +121,6 @@
         margin: 0 0;
         margin-top: 14px;
         input{
-            background: #F3F9FF;
-            border: none;
         }
     }
 }
